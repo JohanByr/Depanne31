@@ -1,0 +1,160 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>DEPANNE31 — Dépannage Toulouse 24h/24</title>
+<style>
+:root{--o:#f97316;--d:#0f172a}html{color-scheme:light}*{box-sizing:border-box}body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:16px system-ui,sans-serif;background:#f1f5f9;color:var(--d)}
+header{background:var(--d);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;position:sticky;top:0;z-index:5}
+header b{color:var(--o);font-size:1.3em;cursor:pointer}nav button{margin-left:8px}main{max-width:1000px;margin:auto;padding:20px}
+button,.btn{background:var(--o);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;text-decoration:none;display:inline-block;margin:2px}
+button.s{background:#475569}button.r{background:#dc2626}
+input,select,textarea{width:100%;padding:9px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;margin:4px 0 10px}
+.hero{background:var(--d);color:#fff;border-radius:16px;padding:34px 20px;text-align:center}.hero h1{margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 1px 4px #0002}.sv{cursor:pointer}.sv:hover{outline:2px solid var(--o)}
+.p{color:var(--o);font-weight:700;font-size:1.15em}.t{font-size:.85em;color:#64748b}.on{background:#ffedd5;border-radius:6px;padding:0 6px}
+.badge{background:#e2e8f0;border-radius:99px;padding:2px 10px;font-size:.85em}.box{max-width:440px;margin:auto}
+table{width:100%;border-collapse:collapse}td,th{padding:6px;text-align:left}h2{margin-top:28px}
+.ic{margin-bottom:6px}.ico{width:30px;height:30px;color:var(--o)}
+.ba{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:8px;background:#cbd5e1;margin-bottom:8px;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .b{clip-path:inset(0 calc(100% - var(--x)) 0 0)}
+.ba::after{content:"";position:absolute;top:0;bottom:0;left:var(--x);width:2px;background:#fff;box-shadow:0 0 4px #0006;pointer-events:none}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;padding:0;border:0;opacity:0;cursor:ew-resize}
+.ba span{position:absolute;top:8px;background:#0009;color:#fff;font-size:.75em;padding:2px 8px;border-radius:4px;pointer-events:none}.l1{left:8px}.l2{right:8px}
+:root{--o:#D62828;--d:#111}
+body{background:#F5F1E8;color:#111;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,header b{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;letter-spacing:-.5px}
+h2{display:flex;align-items:center}h2::before{content:"";width:14px;height:14px;background:#D62828;margin-right:10px;flex:none}
+header{background:#F5F1E8;color:#111;border-bottom:4px solid #111}
+header b{color:#111;letter-spacing:1px;font-size:1.2em}
+.hero{position:relative;background:#F5F1E8;color:#111;border:0;border-bottom:4px solid #111;border-radius:0;text-align:left;padding:70px 4px 24px}
+.hero h1{font-size:2.4rem;line-height:1.02;margin:0 0 10px}
+.hero::before{content:"";position:absolute;top:12px;right:98px;width:34px;height:34px;border-radius:50%;background:#D62828}
+.hero::after{content:"";position:absolute;top:12px;right:54px;width:34px;height:34px;background:#1D3A8A}
+.hero h1::after{content:"";position:absolute;top:12px;right:10px;width:0;height:0;border-left:17px solid transparent;border-right:17px solid transparent;border-bottom:34px solid #F2B705}
+.card{background:#fff;border:0;border-left:6px solid #D62828;border-radius:0;box-shadow:none}
+.grid .card:nth-child(3n+2){border-left-color:#1D3A8A}.grid .card:nth-child(3n){border-left-color:#F2B705}
+.sv:hover{outline:2px solid #111}
+button,.btn{background:#1D3A8A;color:#fff;border:0;border-radius:0;font-weight:700}
+button:hover,.btn:hover{background:#D62828}
+button.s,.btn.s{background:#111}button.s:hover,.btn.s:hover{background:#444}
+button.r{background:#D62828}button.r:hover{background:#111}
+input,select,textarea{background:#fff;border:2px solid #111;border-radius:0}
+.p{color:#D62828;font-weight:800}
+.t{color:#444}.badge{background:#F2B705;color:#111;border-radius:0;font-weight:600}.on{background:#F2B705;border-radius:0}
+.ba,.ba img{border-radius:0}.ba{border:3px solid #111}
+footer{background:#111!important;color:#F5F1E8!important}footer a{color:#F2B705}footer b{color:#F2B705!important}
+</style></head><body>
+<header><b onclick="go('home')">DEPANNE31</b><nav id="nav"></nav></header><main id="app"></main>
+<footer style="background:var(--d);color:#cbd5e1;padding:18px 20px;text-align:center;font-size:.85em;margin-top:30px"><b style="color:var(--o)">DEPANNE31</b> · Toulouse et agglomération · 07 82 18 63 13<br>
+<a href="#" onclick="go('legal-mentions');return false">Mentions légales</a> · <a href="#" onclick="go('legal-cgu');return false">CGU</a> · <a href="#" onclick="go('legal-cgv');return false">CGV</a> · <a href="#" onclick="go('legal-rgpd');return false">Confidentialité (RGPD)</a> · <a href="#" onclick="go('legal-cookies');return false">Cookies</a> · <a href="#" onclick="LS.s('d31db','');DB=null;load();go('home');return false">Réinitialiser la démo</a></footer>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let T='',U=null,SV=[],NIGHT=false,view='home';
+const mem={},LS={g:k=>{try{return localStorage.getItem(k)}catch{return mem[k]??null}},s:(k,v)=>{try{localStorage.setItem(k,v)}catch{mem[k]=v}}},store={get t(){return LS.g('t')},set t(v){LS.s('t',v)}};
+const hash=s=>btoa(unescape(encodeURIComponent(s+'d31'))),night=()=>{const h=+new Intl.DateTimeFormat('fr-FR',{hour:'numeric',hourCycle:'h23',timeZone:'Europe/Paris'}).format(new Date());return h>=20||h<8};
+let DB=null;const save=()=>LS.s('d31db',JSON.stringify(DB));
+function load(){try{DB=JSON.parse(LS.g('d31db'))}catch{DB=null}if(DB&&DB.services)return;
+DB={seq:3,iseq:0,reviews:{},notifs:[],interventions:[],services:[['','Ouverture de porte','Porte claquée ou serrure bloquée','Serrurerie','urgence',120,200],['','Urgence plomberie','Fuite, dégât des eaux, canalisation bouchée','Plomberie','urgence',180,300],['','Urgence électricité','Panne, court-circuit, disjoncteur HS','Électricité','urgence',180,300],['','Panne chauffage','Chaudière ou radiateur en panne','Chauffage','urgence',200,280],['','Débouchage urgent','WC, évier, baignoire bouchés','Plomberie','urgence',150,220],['','Changement de serrure','Remplacement complet, toutes marques','Serrurerie','courante',160,160],['','Réparation fuite d’eau','Recherche et réparation, joints, robinetterie','Plomberie','courante',130,130],['','Prise / interrupteur','Pose ou remplacement avec diagnostic','Électricité','courante',90,90],['','Entretien chaudière','Nettoyage, contrôle, réglages complets','Chauffage','courante',120,120]].map((s,i)=>({id:i+1,icon:s[0],label:s[1],descr:s[2],trade:s[3],kind:s[4],price_day:s[5],price_night:s[6]})),
+users:[{id:1,name:'Admin',email:'admin@depanne31.fr',role:'admin'},{id:2,name:'Marc Technicien',email:'tech@depanne31.fr',role:'technicien'},{id:3,name:'Julie Cliente',email:'client@depanne31.fr',role:'client'}].map(u=>({...u,hash:hash('demo1234'),available:u.role=='technicien'?1:0,approved:1}))};save()}
+const N=(uid,msg)=>DB.notifs.unshift({id:Math.random(),user_id:uid,msg,seen:0});
+const J=i=>{const s=DB.services.find(x=>x.id==i.service_id),c=DB.users.find(x=>x.id==i.client_id),t=DB.users.find(x=>x.id==i.tech_id),r=DB.reviews[i.id]||{};return{...i,label:s.label,icon:s.icon,cname:c.name,cphone:c.phone,tname:t&&t.name,tphone:t&&t.phone,rating:r.rating,comment:r.comment}};
+const safe=u=>({id:u.id,name:u.name,email:u.email,phone:u.phone,role:u.role,available:u.available,approved:u.approved});
+async function api(p,m='GET',b={}){load();const E=s=>{throw s},u=T&&DB.users.find(x=>'u'+x.id==T),R=u&&u.role,[a,id,act]=p.split('/'),need=(...r)=>{if(!u)E('Connexion requise');if(r.length&&!r.includes(R))E('Accès refusé')};
+let out={ok:true};
+if(a=='register'){if(!b.name||!b.email||!b.password||b.password.length<6)E('Nom, email et mot de passe (6 car. min) requis');if(!['client','technicien'].includes(b.role))E('Rôle invalide');if(DB.users.some(x=>x.email==b.email))E('Email déjà utilisé');DB.users.push({id:++DB.seq,name:b.name,email:b.email,phone:b.phone,hash:hash(b.password),role:b.role,available:0,approved:b.role=='client'?1:0});if(b.role=='technicien')DB.users.filter(x=>x.role=='admin').forEach(x=>N(x.id,`Nouveau technicien à valider : ${b.name}`))}
+else if(a=='login'){const x=DB.users.find(x=>x.email==b.email&&x.hash==hash(b.password||''));if(!x)E('Identifiants incorrects');out={token:'u'+x.id}}
+else if(a=='me'){need();if(id=='available'){u.available=b.available?1:0}else out=safe(u)}
+else if(a=='services'){if(m=='PUT'){need('technicien','admin');const d=+b.price_day,n=+b.price_night;if(!(d>0)||!(n>0))E('Prix invalide');Object.assign(DB.services.find(x=>x.id==id),{price_day:d,price_night:n})}else out={night:night(),list:DB.services}}
+else if(a=='users'){need('admin');if(m=='PUT'){const x=DB.users.find(x=>x.id==id);if(x&&x.role!='admin')x.approved=b.approved?1:0}else out=DB.users.map(x=>{const rs=DB.interventions.filter(i=>i.tech_id==x.id&&DB.reviews[i.id]).map(i=>DB.reviews[i.id].rating);return{...safe(x),note:rs.length?Math.round(rs.reduce((p,c)=>p+c,0)/rs.length*10)/10:null}})}
+else if(a=='notifs'){need();if(m=='POST')DB.notifs.forEach(n=>{if(n.user_id==u.id)n.seen=1});else out=DB.notifs.filter(n=>n.user_id==u.id).slice(0,15)}
+else if(a=='interventions'&&!id){need();if(m=='GET')out=DB.interventions.filter(i=>R=='client'?i.client_id==u.id:R=='technicien'?(i.tech_id==u.id||(i.status=='pending'&&u.available&&u.approved)):1).map(J).reverse();
+else{need('client');const sv=DB.services.find(x=>x.id==b.service_id);if(!sv||!b.address||!b.descr)E('Service, adresse et description requis');if(b.photo&&b.photo.length>1.2e6)E('Photo trop lourde (1 Mo max en démo)');if(sv.kind=='courante'&&!b.slot)E('Choisissez un créneau');
+const ug=sv.kind=='urgence',period=ug?(night()?'nuit':'jour'):'courante',price=period=='nuit'?sv.price_night:sv.price_day,it={id:++DB.iseq,client_id:u.id,tech_id:null,service_id:sv.id,period,price,address:b.address,descr:b.descr,photo:b.photo||null,slot:b.slot||null,status:'pending',paid_at:null,refunded:0};DB.interventions.push(it);
+const ts=DB.users.filter(x=>x.role=='technicien'&&x.available&&x.approved);ts.forEach(x=>N(x.id,`Nouvelle demande : ${sv.label} (${period}, ${price} €)`));out={id:it.id,warning:ts.length?null:'Aucun technicien disponible pour le moment : votre demande reste en attente.'}}}
+else if(a=='interventions'){need();const i=DB.interventions.find(x=>x.id==id)||E('Introuvable'),st=i.status,bad=()=>E('Action impossible dans cet état');
+if(act=='accept'){need('technicien');if(!u.available||!u.approved)E('Passez en « disponible » (compte validé requis)');if(st!='pending')E('Déjà prise par un autre technicien');i.status='accepted';i.tech_id=u.id;N(i.client_id,`${u.name} a validé votre demande : vous pouvez payer.`)}
+else if(act=='pay'){need('client');if(i.client_id!=u.id||st!='accepted')bad();i.status='paid';i.paid_at=new Date().toLocaleString('fr-FR');N(i.tech_id,`Demande #${i.id} payée : vous pouvez intervenir.`)}
+else if(act=='start'){need('technicien');if(i.tech_id!=u.id||st!='paid')bad();i.status='in_progress';N(i.client_id,'Votre technicien est en route / a commencé.')}
+else if(act=='done'){need('technicien');if(i.tech_id!=u.id||st!='in_progress')bad();i.status='done';N(i.client_id,'Intervention terminée. Laissez un avis !')}
+else if(act=='cancel'){const ok=(R=='client'&&i.client_id==u.id&&['pending','accepted','paid'].includes(st))||(R=='technicien'&&i.tech_id==u.id&&['accepted','paid'].includes(st))||(R=='admin'&&!['done','cancelled'].includes(st));if(!ok)E('Annulation impossible');i.refunded=i.paid_at?1:0;i.status='cancelled';const msg=`Demande #${i.id} annulée${i.refunded?` — ${i.price} € remboursés (simulé)`:''}.`;N(i.client_id,msg);if(i.tech_id)N(i.tech_id,msg)}
+else if(act=='review'){need('client');const n=+b.rating;if(i.client_id!=u.id||st!='done'||!(n>=1&&n<=5))E('Avis impossible');DB.reviews[i.id]={rating:n,comment:b.comment||''}}}
+if(m!='GET')save();return out}
+function facture(id){load();const i=DB.interventions.find(x=>x.id==id);if(!i||!i.paid_at||!U||(U.role=='client'&&i.client_id!=U.id))return go('dash');const j=J(i),ht=(i.price/1.2).toFixed(2),tva=(i.price-i.price/1.2).toFixed(2);
+$('#app').innerHTML=`<div class="card"><h2 style="margin-top:0">Facture n°${String(i.id).padStart(5,'0')}</h2><p>Date de paiement : ${esc(i.paid_at)}<br>Client : ${esc(j.cname)}<br>Technicien : ${esc(j.tname)}</p><table border="1" style="border-collapse:collapse"><tr><td>${esc(j.label)} (${i.period}) — ${esc(i.address)}</td><td>${ht} € HT</td></tr><tr><td>TVA 20 %</td><td>${tva} €</td></tr><tr><th>Total TTC${i.refunded?' (REMBOURSÉ)':''}</th><th>${i.price} €</th></tr></table><p><button onclick="print()">Imprimer / PDF</button> <button class="s" onclick="go('dash')">← Retour</button></p></div>`}
+const ST={pending:'En attente d’un technicien',accepted:'Validée — paiement attendu',paid:'Payée',in_progress:'En cours',done:'Terminée',cancelled:'Annulée'};
+const go=v=>{view=v;draw()};
+async function boot(){T=store.t||'';const r=await api('services');SV=r.list;NIGHT=r.night;try{U=T?await api('me'):null}catch{U=null;T=''}draw()}
+function nav(){$('#nav').innerHTML=U?`<button onclick="go('dash')">Mon espace</button><button class="s" onclick="T='';store.t='';U=null;go('home')">Déconnexion</button>`:`<button onclick="go('login')">Connexion</button><button class="s" onclick="go('register')">S’inscrire</button>`}
+function draw(){nav();if(view=='home')home();else if(view=='login'||view=='register')authView();else if(view=='dash')U?dash():go('login');else if(view.startsWith('order'))order(+view.slice(5));else if(view.startsWith('legal-'))legal(view.slice(6));else if(view.startsWith('fact'))facture(+view.slice(4))}
+function home(){
+const tile=s=>`<div class="card sv" onclick="pick(${s.id})"><b>${s.label}</b><div class="t">${s.descr}</div><div class="p">${s.kind=='urgence'&&NIGHT?s.price_night:s.price_day} € TTC</div></div>`;
+$('#app').innerHTML=`<div class="hero"><h1>Dépannage.<br>Simple. Rapide.</h1><p>Toulouse et agglomération · Prix fixes · Paiement sécurisé</p><p>Tarif actuel appliqué automatiquement : <b>${NIGHT?'NUIT (20h–8h)':'JOUR (8h–20h)'}</b></p></div>
+<h2>Urgences (jour 8h–20h / nuit 20h–8h)</h2><div class="grid">${SV.filter(s=>s.kind=='urgence').map(tile).join('')}</div>
+<h2>Interventions courantes</h2><div class="grid">${SV.filter(s=>s.kind=='courante').map(tile).join('')}</div>
+<h2>Nos réalisations, avant / après</h2>${galHtml()}
+<h2>Partenaires</h2><p>EPC toiture · Portet Locations · H3S</p><p class="t">Un autre besoin ? Appelez-nous : 07 82 18 63 13</p>`}
+function pick(id){U?go('order'+id):go('login')}
+function authView(){const reg=view=='register';$('#app').innerHTML=`<div class="card box"><h2>${reg?'Inscription':'Connexion'}</h2>${reg?'<input id=n placeholder="Nom"><input id=ph placeholder="Téléphone"><select id=ro><option value=client>Je suis client</option><option value=technicien>Je suis technicien (validation admin)</option></select>':''}<input id=e type=email placeholder="Email"><input id=pw type=password placeholder="Mot de passe"><button onclick="auth(${reg})">${reg?'Créer mon compte':'Se connecter'}</button><p class="t">Démo : client@depanne31.fr / tech@depanne31.fr / admin@depanne31.fr — mot de passe demo1234</p></div>`}
+async function auth(reg){try{if(reg){await api('register','POST',{name:$('#n').value,phone:$('#ph').value,role:$('#ro').value,email:$('#e').value,password:$('#pw').value});alert('Compte créé'+($('#ro').value=='technicien'?' — en attente de validation par un admin':''))}
+const r=await api('login','POST',{email:$('#e').value,password:$('#pw').value});T=r.token;store.t=T;U=await api('me');go('dash')}catch(e){alert(e)}}
+function order(id){const s=SV.find(x=>x.id==id),u=s.kind=='urgence',price=u&&NIGHT?s.price_night:s.price_day;
+$('#app').innerHTML=`<div class="card box"><h2>${s.label}</h2><p class="p">${price} € TTC ${u?(NIGHT?'(tarif nuit)':'(tarif jour)'):''}</p><input id=ad placeholder="Adresse d’intervention (Toulouse et agglo)"><textarea id=de rows=3 placeholder="Décrivez le problème"></textarea><label class="t">Photo (facultatif)</label><input id=ph type=file accept="image/*">${u?'<p class="t">Urgence : un technicien disponible peut valider votre demande, puis vous payez.</p>':'<label class="t">Créneau souhaité</label><input id=sl type=datetime-local>'}<button onclick="send(${id})">Envoyer la demande</button></div>`}
+async function send(id){try{let photo=null;const f=$('#ph').files[0];if(f)photo=await new Promise(r=>{const x=new FileReader();x.onload=()=>r(x.result);x.readAsDataURL(f)});
+const r=await api('interventions','POST',{service_id:id,address:$('#ad').value,descr:$('#de').value,photo,slot:$('#sl')?.value});if(r.warning)alert(r.warning);go('dash')}catch(e){alert(e)}}
+const act=async(id,a)=>{try{await api(`interventions/${id}/${a}`,'POST');dash()}catch(e){alert(e);dash()}};
+const rev=async id=>{try{await api(`interventions/${id}/review`,'POST',{rating:+$('#r'+id).value,comment:$('#c'+id).value});dash()}catch(e){alert(e)}};
+function card(i){const R=U.role,st=i.status;let b='';
+if(R=='client'){if(st=='accepted')b+=`<button onclick="act(${i.id},'pay')">Payer ${i.price} € (simulé)</button>`;if(['pending','accepted','paid'].includes(st))b+=`<button class="r" onclick="confirm('Annuler ?')&&act(${i.id},'cancel')">Annuler</button>`;if(st=='done'&&!i.rating)b+=`<br><select id=r${i.id} style="width:auto">${[5,4,3,2,1].map(n=>`<option>${n}</option>`).join('')}</select> sur 5 <input id=c${i.id} placeholder="Avis" style="width:60%"><button onclick="rev(${i.id})">Noter</button>`}
+if(R=='technicien'){if(st=='pending')b+=`<button onclick="act(${i.id},'accept')">Valider</button>`;if(st=='paid')b+=`<button onclick="act(${i.id},'start')">Démarrer</button>`;if(st=='in_progress')b+=`<button onclick="act(${i.id},'done')">Terminer</button>`;if(['accepted','paid'].includes(st))b+=`<button class="r" onclick="confirm('Annuler ?')&&act(${i.id},'cancel')">Annuler</button>`}
+if(R=='admin'&&!['done','cancelled'].includes(st))b+=`<button class="r" onclick="act(${i.id},'cancel')">Annuler</button>`;
+if(['paid','in_progress','done'].includes(st)||i.refunded)b+=`<button class="s" onclick="go('fact${i.id}')">Facture</button>`;
+return `<div class="card"><b>#${i.id} ${esc(i.label)}</b> <span class="badge">${i.period}</span> <span class="badge">${ST[st]}</span><br>${i.price} € · ${esc(i.address)}${i.slot?' · '+esc(i.slot):''}<br><span class="t">${esc(i.descr)} — client : ${esc(i.cname)}${i.tname?' · technicien : '+esc(i.tname):''}${i.refunded?' · remboursé':''}</span>${i.photo?`<br><img src="${i.photo}" style="max-height:80px;border-radius:6px">`:''}${i.rating?`<br>Note : ${i.rating}/5 ${esc(i.comment)}`:''}<br>${b}</div>`}
+async function dash(){if(document.activeElement&&/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&$('#app').contains(document.activeElement))return;
+try{const[list,nf]=await Promise.all([api('interventions'),api('notifs')]);U=await api('me');const R=U.role,un=nf.filter(n=>!n.seen);
+let h=`<h2>Bonjour ${esc(U.name)} <span class="badge">${R}</span></h2>`;
+if(R=='technicien')h+=U.approved?`<label><input type=checkbox style="width:auto" ${U.available?'checked':''} onchange="api('me/available','PUT',{available:this.checked}).then(dash)"> Je suis disponible (reçoit les nouvelles demandes)</label>`:'<p>Compte en attente de validation par un admin.</p>';
+if(un.length)h+=`<div class="card"><b>Notifications</b><br>${un.map(n=>esc(n.msg)).join('<br>')}<br><button class="s" onclick="api('notifs/seen','POST').then(dash)">Tout marquer lu</button></div>`;
+if(R=='client')h+=`<p><button onclick="go('home')">+ Nouvelle intervention</button></p>`;
+h+=`<h2>${R=='client'?'Mes interventions':R=='technicien'?'Demandes & interventions':'Toutes les interventions'}</h2><div class="grid">${list.map(card).join('')||'<p>Rien pour le moment.</p>'}</div>`;
+if(R!='client')h+=`<h2>Ajouter une réalisation</h2><div class="card box" style="margin:0"><input id=gt placeholder="Titre (ex. Changement de serrure)"><input id=gc placeholder="Ville (ex. Balma)"><select id=gk>${['Serrurerie','Plomberie','Électricité','Chauffage'].map(x=>`<option>${x}</option>`).join('')}</select><label class="t">Photo avant</label><input id=gb type=file accept="image/*"><label class="t">Photo après</label><input id=ga type=file accept="image/*"><button onclick="addReal()">Publier</button></div><h2>Galerie publiée</h2>${galHtml()}`;
+if(R!='client')h+=`<h2>Tarifs</h2><div class="card"><table><tr><th></th><th>Jour €</th><th>Nuit €</th></tr>${SV.map(s=>`<tr><td>${s.label}</td><td><input id=d${s.id} type=number value=${s.price_day} onchange="pr(${s.id})"></td><td><input id=n${s.id} type=number value=${s.price_night} ${s.kind=='courante'?'disabled':''} onchange="pr(${s.id})"></td></tr>`).join('')}</table></div>`;
+if(R=='admin'){const us=await api('users');h+=`<h2>Utilisateurs</h2><div class="card"><table>${us.map(u=>`<tr><td>${esc(u.name)}</td><td>${esc(u.email)}</td><td>${u.role}${u.note?' · note '+u.note:''}</td><td>${u.role!='admin'?`<button class="${u.approved?'r':''}" onclick="api('users/${u.id}/approve','PUT',{approved:${u.approved?0:1}}).then(dash)">${u.approved?'Suspendre':'Valider'}</button>`:''}</td></tr>`).join('')}</table></div>`}
+$('#app').innerHTML=h}catch(e){T='';store.t='';U=null;go('login')}}
+async function pr(id){const s=SV.find(x=>x.id==id),d=+$('#d'+id).value,n=s.kind=='courante'?d:+$('#n'+id).value;try{await api('services/'+id,'PUT',{price_day:d,price_night:n});s.price_day=d;s.price_night=n}catch(e){alert(e)}}
+const ico=t=>`<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${({Serrurerie:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3M14 9l2 2"/>',Plomberie:'<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',Électricité:'<path d="M13 2L5 14h6l-1 8 8-12h-6z"/>',Chauffage:'<path d="M12 22c4 0 7-2.7 7-7 0-3-2-5-3-7-1 2-2 3-3 3 0-3-1-5-3-7-1 4-5 6-5 11 0 4.3 3 7 7 7z"/>'})[t]||''}</svg>`;
+const gal=()=>{try{return JSON.parse(LS.g('d31gal'))||[]}catch{return[]}};
+const galSave=a=>{try{localStorage.setItem('d31gal',JSON.stringify(a));return true}catch{return false}};
+const shrink=f=>new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,800/im.width),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',.72))};im.onerror=()=>ko('Image illisible');im.src=r.result};r.onerror=()=>ko('Lecture impossible');r.readAsDataURL(f)});
+const galHtml=()=>{const g=gal();return g.length?`<div class="grid">${g.map(x=>`<div class="card"><div class="ba" style="--x:50%"><img src="${x.after}" alt="Après"><img class="b" src="${x.before}" alt="Avant"><span class="l1">Avant</span><span class="l2">Après</span><input type="range" min="0" max="100" value="50" aria-label="Comparer avant et après" oninput="this.parentNode.style.setProperty('--x',this.value+'%')"></div><b>${esc(x.title)}</b><div class="t">${esc(x.trade)}${x.city?' · '+esc(x.city):''}</div>${U&&U.role!='client'?`<button class="r" onclick="delReal(${x.id})">Supprimer</button>`:''}</div>`).join('')}</div>`:'<p class="t">Les photos avant / après sont ajoutées par nos techniciens après chaque chantier.</p>'};
+async function addReal(){try{const t=$('#gt').value.trim(),b=$('#gb').files[0],a=$('#ga').files[0];if(!t||!b||!a)throw 'Titre, photo avant et photo après requis';const g=gal();g.unshift({id:Date.now(),title:t,city:$('#gc').value.trim(),trade:$('#gk').value,before:await shrink(b),after:await shrink(a)});if(!galSave(g))throw 'Espace de stockage plein : supprimez une réalisation';dash()}catch(e){alert(e)}}
+const delReal=id=>{galSave(gal().filter(g=>g.id!=id));draw()};
+const LG={
+mentions:['Mentions légales',`<p><b>Éditeur :</b> DEPANNE31 — [forme juridique et capital à compléter], [adresse à compléter], Toulouse.<br><b>SIRET :</b> [à compléter]<br><b>Téléphone :</b> 07 82 18 63 13<br><b>Directeur de la publication :</b> [nom à compléter]</p>
+<p><b>Hébergeur :</b> [nom et adresse de l’hébergeur à compléter] (en démo : poste local).</p>
+<p><b>Propriété intellectuelle :</b> les textes, visuels et le code du site sont protégés. Toute reproduction sans autorisation est interdite.</p>
+<p class="t">Projet réalisé dans le cadre d’un BTS SIO SLAM : version de démonstration.</p>`],
+cgu:['Conditions générales d’utilisation',`<p><b>1. Objet.</b> DEPANNE31 met en relation des particuliers de Toulouse et son agglomération avec des artisans (serrurerie, plomberie, électricité, chauffage).</p>
+<p><b>2. Compte.</b> La création d’une demande d’intervention nécessite un compte. Les informations fournies doivent être exactes ; l’identifiant et le mot de passe sont personnels.</p>
+<p><b>3. Rôles.</b> Le <i>client</i> crée des demandes et paie. Le <i>technicien</i> (compte validé par un administrateur) valide les demandes qu’il peut honorer et réalise l’intervention. L’<i>administrateur</i> modère la plateforme.</p>
+<p><b>4. Fonctionnement.</b> Une demande est validée par un technicien disponible ; le client peut ensuite payer. En l’absence de technicien disponible, la demande reste en attente.</p>
+<p><b>5. Comportement.</b> Les informations, photos et avis publiés doivent être licites et sincères. Un compte peut être suspendu en cas d’abus.</p>
+<p><b>6. Responsabilité.</b> La plateforme met en relation ; l’intervention est réalisée sous la responsabilité de l’artisan. Le service peut être interrompu pour maintenance.</p>
+<p><b>7. Droit applicable.</b> Droit français. Tribunaux compétents : [à compléter].</p>`],
+cgv:['Conditions générales de vente',`<p><b>1. Prix.</b> Les prix sont fixes, affichés en euros TTC (TVA 20 %) pour chaque service. Les urgences ont un tarif <b>jour (8h–20h)</b> et un tarif <b>nuit (20h–8h)</b>, appliqué automatiquement selon l’heure de la demande (heure de Toulouse). Le prix affiché au moment de la demande est celui facturé.</p>
+<p><b>2. Commande et paiement.</b> Le client paie après validation de la demande par un technicien. Le paiement est exigible avant le début de l’intervention. (Démo : paiement simulé.) Une facture est disponible après paiement.</p>
+<p><b>3. Annulation et remboursement.</b> Annulation gratuite tant que l’intervention n’a pas démarré. Si le client a déjà payé, il est intégralement remboursé. Une fois l’intervention en cours, elle ne peut plus être annulée en ligne.</p>
+<p><b>4. Droit de rétractation.</b> Pour une urgence demandée expressément par le client, le droit de rétractation de 14 jours peut ne pas s’appliquer (code de la consommation, art. L221-28) ; [à faire valider avant mise en production].</p>
+<p><b>5. Garantie et réclamations.</b> Les garanties légales s’appliquent. Réclamation : via la page de contact ou par téléphone au 07 82 18 63 13.</p>
+<p><b>6. Médiation.</b> Le client peut recourir gratuitement à un médiateur de la consommation : [nom et coordonnées à compléter].</p>`],
+rgpd:['Politique de confidentialité (RGPD)',`<p><b>Responsable du traitement :</b> DEPANNE31, [adresse et email de contact à compléter].</p>
+<p><b>Données collectées :</b> nom, email, téléphone, mot de passe (stocké haché), adresse d’intervention, description et photo éventuelle, créneau, historique des demandes, paiements simulés, avis.</p>
+<p><b>Finalités :</b> gestion du compte, mise en relation client/technicien, paiement et facturation, notifications, amélioration du service.</p>
+<p><b>Base légale :</b> exécution du contrat ; obligation légale (facturation) ; intérêt légitime (sécurité).</p>
+<p><b>Destinataires :</b> les techniciens uniquement pour les demandes qu’ils prennent en charge, et l’administrateur. Aucune revente de données.</p>
+<p><b>Durée :</b> compte actif + 3 ans ; factures : 10 ans.</p>
+<p><b>Vos droits :</b> accès, rectification, effacement, limitation, opposition, portabilité, en écrivant à [email à compléter]. Réclamation possible auprès de la CNIL (cnil.fr).</p>`],
+cookies:['Politique de cookies',`<p>Ce site n’utilise <b>aucun cookie de suivi, de publicité ou de mesure d’audience</b>.</p>
+<p>Il enregistre uniquement dans votre navigateur (stockage local) un jeton de connexion, strictement nécessaire pour rester connecté. Il est supprimé à la déconnexion. Ce stockage ne nécessite pas de consentement.</p>
+<p class="t">Si des outils d’analyse ou un paiement en ligne réel (Stripe/PayPal) sont ajoutés plus tard, cette page et un bandeau de consentement devront être mis à jour.</p>`]};
+function legal(k){const[t,b]=LG[k];$('#app').innerHTML=`<div class="card"><h2 style="margin-top:0">${t}</h2>${b}<p class="t">Dernière mise à jour : novembre 2026 — modèle à adapter et à faire relire avant un usage réel.</p><button class="s" onclick="go('home')">← Accueil</button></div>`}
+setInterval(()=>{if(view=='dash'&&U)dash()},8000);boot();
+</script></body></html>
