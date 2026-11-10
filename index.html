@@ -42,10 +42,14 @@ input,select,textarea{background:#fff;border:2px solid #111;border-radius:0}
 .t{color:#444}.badge{background:#F2B705;color:#111;border-radius:0;font-weight:600}.on{background:#F2B705;border-radius:0}
 .big{grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr))}.ba,.ba img{border-radius:0}.ba{border:3px solid #111}
 footer{background:#111!important;color:#F5F1E8!important}footer a{color:#F2B705}footer b{color:#F2B705!important}
-#back{max-width:1000px;margin:auto;padding:14px 20px 0}#back:empty{display:none}</style></head><body>
+#back{max-width:1000px;margin:auto;padding:14px 20px 0}#back:empty{display:none}body{background:#EFECE5;display:flex;flex-direction:column;min-height:100vh}
+header,.hero{background:#EFECE5}
+.card{border-color:#DAD6CC}
+main{flex:1;width:100%;margin:0 auto}#back{margin:0 auto;width:100%}
+footer{padding:10px 16px!important;font-size:.8em!important;margin-top:0!important;line-height:1.5}
+</style></head><body>
 <header><b onclick="go('home')">DEPANNE31</b><nav id="nav"></nav></header><div id="back"></div><main id="app"></main>
-<footer style="background:var(--d);color:#cbd5e1;padding:18px 20px;text-align:center;font-size:.85em;margin-top:30px"><b style="color:var(--o)">DEPANNE31</b> · Toulouse et agglomération · 07 82 18 63 13<br>
-<a href="#" onclick="go('legal-mentions');return false">Mentions légales</a> · <a href="#" onclick="go('legal-cgu');return false">CGU</a> · <a href="#" onclick="go('legal-cgv');return false">CGV</a> · <a href="#" onclick="go('legal-rgpd');return false">Confidentialité (RGPD)</a> · <a href="#" onclick="go('legal-cookies');return false">Cookies</a> · <a href="#" onclick="LS.s('d31db','');DB=null;load();go('home');return false">Réinitialiser la démo</a></footer>
+<footer style="background:var(--d);color:#cbd5e1;padding:18px 20px;text-align:center;font-size:.85em;margin-top:30px"><b style="color:var(--o)">DEPANNE31</b> · Toulouse et agglomération · 07 82 18 63 13 · <a href="#" onclick="go('legal-mentions');return false">Mentions légales</a> · <a href="#" onclick="go('legal-cgu');return false">CGU</a> · <a href="#" onclick="go('legal-cgv');return false">CGV</a> · <a href="#" onclick="go('legal-rgpd');return false">Confidentialité (RGPD)</a> · <a href="#" onclick="go('legal-cookies');return false">Cookies</a> · <a href="#" onclick="LS.s('d31db','');DB=null;load();go('home');return false">Réinitialiser la démo</a></footer>
 <script>
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let T='',U=null,SV=[],NIGHT=false,view='home';
